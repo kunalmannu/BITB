@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OS and Theme Detection</title>
+</head>
+<body>
+    <script>
+        function getOperatingSystem() {
+            const platform = window.navigator.platform;
+            if (platform.includes("Win")) {
+                return "Windows";
+            } else if (platform.includes("Mac")) {
+                return "MacOS";
+            } else if (platform.includes("Linux")) {
+                if (platform.includes("Ubuntu")) {
+                    return "Ubuntu";
+                } else {
+                    return "Kali-Linux";
+                }
+            }
+            return "Unknown";
+        }
+
+        function getThemePreference() {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return "Dark";
+            } else {
+                return "Light";
+            }
+        }
+
+        const os = getOperatingSystem();
+        const theme = getThemePreference();
+
+        // Redirect to the appropriate HTML page based on the OS and theme
+        if (os === "Windows" && theme === "Light") {
+            window.location.href = "./Windows-LightMode/index.html";
+        } else if (os === "Windows" && theme === "Dark") {
+            window.location.href = "./Windows-DarkMode/index.html";
+        } else if (os === "MacOS" && theme === "Light") {
+            window.location.href = "./MacOS-LightMode/index.html";
+        } else if (os === "MacOS" && theme === "Dark") {
+            window.location.href = "./MacOS-DarkMode/index.html";
+        } else if ((os === "Kali-Linux" || os === "Linux") && theme === "Light") {
+            window.location.href = "./KaliLinux-LightMode/index.html";
+        } else if ((os === "Kali-Linux" || os === "Linux") && theme === "Dark") {
+            window.location.href = "./KaliLinux-DarkMode/index.html";
+        } else if (os === "Ubuntu" && theme === "Light") {
+            window.location.href = "./Ubuntu-LightMode/index.html";
+        } else if (os === "Ubuntu" && theme === "Dark") {
+            window.location.href = "./Ubuntu-DarkMode/index.html";
+        } else {
+            // Default page for an unknown OS or theme
+            window.location.href = "unknown.html";
+        }
+    </script>
+</body>
+</html>
