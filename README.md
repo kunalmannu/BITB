@@ -1,9 +1,5 @@
 # BITB ~
-- Browser Templates For [Browser In The Browser (BITB) attack
-So Basically In (BITB) There Will Be A Fake Popup As It Requires A Permission To Give A Popup In The Normal Way So In The Fake Popup There Will Be A Iframe Of A Phishing Site.
-At The Start When The User Vist The Main Page Which Is The Main.html. The Main File Detects The User OS And Also Detects If The User Theme Is Dark Or Light And Redirects Them 
-To Their Required Web Pages. A Big Credit Goes To mrd0x As He Made The Project In Which I Did Some Big Changes Like Removing The Close Button So That The Victim Could Not 
-Close It, Adding The Main File, Some CSS Edits And Etc So That It Could A Lot Easier And Also Added Some Other OS's Like Kali-Linux and Ubuntu
+- Browser Templates For [Browser In The Browser (BITB) Attack So Basically In (BITB) There Will Be A Fake Popup As It Requires A Permission To Give A Popup In The Normal Way So In The Fake Popup There Will Be An Iframe Of A Phishing Site. At The Start When The User Vist The Main Page Which Is The Main.html. The Main File Detects The User OS And Also Detects If The User Theme Is Dark Or Light And Redirects Them To Their Required Web Pages. A Big Credit Goes To mrd0x As He Made The Project In Which I Did Some Big Changes Like Removing The Close Button So That The Victim Could Not Close It, Adding The Main File, Some CSS Edits And Etc So That It Could Be A Lot Easier And Also Added Some Other OS's Like Kali-Linux and Ubuntu
 
 # Installation
 Just Download The Zip File From This Github Or Go To Your Terminal And Paste
